@@ -1,0 +1,22 @@
+==========
+Operations
+==========
+Join : Join to the match.
+put(Domino, Side) : Add domino at the end of left/right side. The Side accept two values l for left and r for right.
+getdomino (Domino) : get a new domino from the sleeping dominos.
+passturn() : pass the turn is just available when there no are sleeping dominos and there no are dominos available to play in the player's hand.
+
+=====================
+Observable Properties
+=====================
+playerturn(Ag) : show who agent plays in current turn.
+win(Ag) : show the winner agent the match.
+draw : show the match is draw.
+dominosontable(List) : show a list with all the pieces in the table.
+
+=======
+Signals
+=======
+hand(Domino) : give a domino in private.
+peeked : tell when someone peek a sleeping domino.
+sucessfulput(Domino) : inform im private when a domino is successful putted.
